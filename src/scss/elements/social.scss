@@ -1,0 +1,89 @@
+.social {
+  background-color: #fff;
+  padding-top: 50px;
+  .text-one {
+    font-size: 32px;
+    font-family: 'M-Bold';
+    margin-bottom: 50px;
+    line-height: 40px;
+  }
+  .text-two {
+    font-size: 22px;
+    font-family: 'M-Regular';
+    line-height: 30px;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+
+    @media (min-width: 1200px) {
+      margin-top: 0;
+      margin-left: 30px;
+    }
+  }
+  &__photo img {
+    width: 100%;
+    height: auto;
+  }
+  .icon {
+    width: 28px;
+    height: 28px;
+
+    @media (min-width: 768px) {
+      width: 38px;
+      height: 38px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 58px;
+      height: 58px;
+    }
+  }
+
+  &__icons {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: black;
+      content: '';
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  .social__inner-line {
+    @media (min-width: 1200px) {
+      position: relative;
+      &::after {
+        position: absolute;
+        left: -20px;
+        top: 0;
+        height: 59%;
+        content: '';
+        background-color: black;
+        width: 2px;
+      }
+    }
+  }
+}
+.social__item {
+  transform: translateY(1000%);
+  transition: 1s;
+}
+.social--active {
+  transform: translateY(0);
+}

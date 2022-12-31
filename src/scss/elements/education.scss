@@ -1,0 +1,81 @@
+.education {
+  padding-top: 150px;
+  background: linear-gradient(#fff, #dce9f5);
+}
+
+.slide-img {
+  width: 320px;
+  transform: rotate(90deg);
+  align-items: center;
+}
+.diplom-slide {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.swiper-slide {
+  width: 50%;
+  height: 50%;
+}
+.debrif {
+  transform: rotate(0);
+}
+.prev {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 23px;
+    border-bottom-width: 31px;
+    border-right: 61px solid black;
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+  }
+}
+.next {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 23px;
+    border-top-width: 31px;
+    border-left: 61px solid black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 999;
+  }
+}
+.swiper-pagination {
+  bottom: 300px;
+}
+.swiper-pagination-bullet-active {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+}
+.education__title {
+  text-align: center;
+  font-family: 'M-Bold';
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 50px;
+  @media (min-width: 992px) {
+    font-size: 36px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    right: 0;
+    bottom: -20px;
+  }
+}

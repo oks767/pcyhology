@@ -1,0 +1,148 @@
+.purpose {
+  padding-top: 100px;
+  &__title {
+    font-family: 'M-Bold';
+    font-size: 26px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      height: 2px;
+      width: 80%;
+      background-color: black;
+    }
+  }
+  &__btn {
+    background-color: rgb(67, 112, 97);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 20px;
+    transform: translate(20px, 20px);
+    transition: 0.5s;
+    display: inline-block;
+    cursor: pointer;
+    @media (min-width: 1200px) {
+      padding: 40px;
+    }
+  }
+  .text-vertical {
+    writing-mode: tb-rl;
+    display: block;
+    color: #fff;
+    font-family: 'M-Regular';
+    text-align: center;
+    @media (min-width: 1200px) {
+      font-size: 20px;
+    }
+  }
+  &__item {
+    background-color: rgb(237, 242, 247);
+    display: inline-block;
+    border-radius: 20px;
+    height: 241px;
+    @media (min-width: 1200px) {
+      height: 381px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__card {
+    margin-bottom: 20px;
+    width: 200px;
+    margin-left: 10px;
+    padding: 10px;
+    @media (min-width: 992px) {
+      width: 300px;
+      height: 200px;
+      position: relative;
+      padding: 20px;
+    }
+  }
+  .card-title {
+    font-family: 'M-Regular';
+    font-size: 16px;
+    margin-bottom: 10px;
+    @media (min-width: 992px) {
+      font-size: 20px;
+    }
+  }
+  .card-text {
+    font-family: 'M-Regular';
+    font-size: 14px;
+    @media (min-width: 992px) {
+      font-size: 16px;
+      transition: 0.5s;
+    }
+  }
+}
+.purpose__item:hover .purpose__btn {
+  transform: translate(0, 0);
+}
+.purple {
+  background-color: rgb(250, 232, 232);
+}
+.human {
+  @media (min-width: 992px) {
+    background-image: url('../img/human.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    float: right;
+  }
+}
+.book {
+  @media (min-width: 992px) {
+    background-image: url('../img/book.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+  }
+}
+.key {
+  @media (min-width: 992px) {
+    background-image: url('../img/key.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    float: right;
+  }
+}
+.emotion {
+  @media (min-width: 992px) {
+    background-image: url('../img/emotion.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    float: right;
+  }
+}
+.card-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 0.5s;
+}
+.purpose__card:hover .card-bg {
+  @media (min-width: 992px) {
+    transform: scale(0.8);
+  }
+}
+.purpose__card:hover .card-text {
+  @media (min-width: 992px) {
+    transform: scale(1.1);
+  }
+}

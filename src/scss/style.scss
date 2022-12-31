@@ -1,0 +1,25 @@
+//Расскоментировать, если нужен слайдер
+@import url('../../node_modules/swiper/swiper-bundle.min.css');
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import 'abstracts/settings.scss';
+@import 'abstracts/fonts.scss';
+@import 'abstracts/variables.scss';
+@import 'elements/header.scss';
+@import 'elements/footer.scss';
+@import 'elements/about.scss';
+@import 'elements/social.scss';
+@import 'elements/video.scss';
+@import 'elements/problems.scss';
+@import 'elements/purpose.scss';
+@import 'elements/education.scss';
+@import 'elements/testimonials.scss';
+@import 'elements/consultaition.scss';
+@import 'elements/pop-up.scss';
+@font-face {
+  font-family: 'M-Regular';
+  src: url(../fonts/Montserrat-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'M-Bold';
+  src: url(../fonts/Montserrat-Bold.woff2) format('woff2');
+}

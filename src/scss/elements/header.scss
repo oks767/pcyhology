@@ -1,0 +1,168 @@
+.header {
+  background-color: rgb(237, 242, 247);
+  padding-bottom: 70px;
+  &__link {
+    text-decoration: none;
+    font-family: 'M-Bold';
+    color: #000;
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: #000;
+      bottom: -3px;
+      transition: 0.3s;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+  }
+  &__bottom {
+    margin-top: 50px;
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  &____bottom-img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    @media (min-width: 768px) {
+      transform: translate(20px, 20px);
+    }
+  }
+
+  &__bottom-item {
+    background-color: #fff;
+  }
+
+  &__bottom-text {
+    margin-top: 40px;
+  }
+  .header-name {
+    font-size: 32px;
+    @media (min-width: 768px) {
+      font-size: 72px;
+    }
+  }
+  .header-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'M-regular';
+    margin-bottom: 20px;
+  }
+  .header-text-one {
+    margin-right: 20px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      height: 18px;
+      width: 1px;
+      background-color: #000;
+      right: -10px;
+    }
+  }
+  &__bottom-btn {
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(67, 112, 97);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    transition: 0.3s;
+    @media (min-width: 768px) {
+      transform: translate(20px, 20px);
+    }
+  }
+
+  .arrow {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    transition: 0.3s;
+  }
+
+  &__button {
+    @media (min-width: 768px) {
+      background-color: #fff;
+      border-radius: 20px;
+      display: inline-block;
+    }
+    &:hover .arrow {
+      margin-left: 30px;
+    }
+    &:hover .header__bottom-btn {
+      transform: translate(0, 0);
+    }
+  }
+
+  .header-right {
+    @media (min-width: 1200px) {
+      padding-left: 40px;
+      align-self: center;
+      border: 1px solid #000;
+      padding-top: 30px;
+      padding-bottom: 70px;
+    }
+  }
+}
+.header__top--mobile {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(237, 242, 247);
+  padding-left: 30px;
+  padding-top: 30px;
+  transform: translateX(100%);
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  z-index: 3;
+}
+.header__top--active {
+  transform: translateX(0);
+}
+@media (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+  .header__top--mobile {
+    position: unset;
+  }
+  .header__top {
+    transform: translateX(0);
+    z-index: 0;
+  }
+  .header__mobile-close {
+    display: none;
+  }
+  .header__list {
+    display: flex;
+    justify-content: center;
+  }
+  .header__item {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .header__list {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
